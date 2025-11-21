@@ -37,7 +37,7 @@ An interactive RevealJS presentation for quarterly earnings reporting.
 Simply open `index.html` in your web browser.
 
 ### GitHub Pages
-This presentation is published at: [Your GitHub Pages URL]
+This presentation is published at: https://23f3004131.github.io/quarterly-earnings-presentation/
 
 ## Navigation
 
