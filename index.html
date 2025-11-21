@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 2025 Quarterly Earnings Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/serif.css">
+    <!-- Syntax highlighting theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/highlight/monokai.css">
+    <style>
+        .reveal .slides {
+            text-align: left;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-align: center;
+        }
+        .email-footer {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            font-size: 0.5em;
+            color: #666;
+        }
+        .fragment.highlight-current-blue {
+            opacity: 1;
+            visibility: inherit;
+        }
+        .fragment.highlight-current-blue.current-fragment {
+            color: #42affa;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Title Slide -->
+            <section data-background-gradient="linear-gradient(to bottom, #1e3a8a, #3b82f6)">
+                <h1 style="color: white;">Q4 2025 Quarterly Earnings Report</h1>
+                <h3 style="color: #e0e7ff;">Financial Performance Analysis</h3>
+                <p style="color: #bfdbfe; text-align: center;">
+                    Presented by: Financial Analytics Team<br>
+                    <small>23f3004131@ds.study.iitm.ac.in</small>
+                </p>
+                <aside class="notes">
+                    Welcome everyone to our Q4 2025 earnings presentation. 
+                    Today we'll cover our financial performance, key metrics, and strategic outlook.
+                    Please hold questions until the end.
+                </aside>
+            </section>
+
+            <!-- Executive Summary - With Fragments -->
+            <section>
+                <h2>Executive Summary</h2>
+                <ul>
+                    <li class="fragment fade-in-then-semi-out">Revenue increased by <strong>23%</strong> year-over-year</li>
+                    <li class="fragment fade-in-then-semi-out">Net profit margin improved to <strong>18.5%</strong></li>
+                    <li class="fragment fade-in-then-semi-out">Customer acquisition cost decreased by <strong>15%</strong></li>
+                    <li class="fragment fade-in-then-semi-out">Operating cash flow reached <strong>$2.4B</strong></li>
+                    <li class="fragment highlight-current-blue">Market share expanded in all key segments</li>
+                </ul>
+                <aside class="notes">
+                    Walk through each metric slowly. Emphasize the 23% revenue growth as our strongest quarter.
+                    Highlight that the profit margin improvement came from operational efficiency gains.
+                    The market share expansion positions us well for 2026.
+                </aside>
+            </section>
+
+            <!-- Markdown Slide -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key Financial Metrics
+                    
+                    | Metric | Q4 2024 | Q4 2025 | Change |
+                    |--------|---------|---------|--------|
+                    | Revenue | $8.2B | $10.1B | +23% |
+                    | Net Income | $1.3B | $1.87B | +44% |
+                    | EPS | $2.45 | $3.52 | +44% |
+                    | ROE | 14.2% | 18.5% | +4.3pp |
+                    
+                    ---
+                    
+                    ### Market Position
+                    
+                    * **#1** in digital banking services
+                    * **#2** in wealth management
+                    * **Top 3** in institutional trading
+                    
+                    _Strong competitive positioning across all verticals_
+                </textarea>
+                <aside class="notes">
+                    This slide shows our comparative performance. Note the 44% increase in net income - 
+                    significantly outpacing revenue growth due to operational leverage.
+                    EPS growth is particularly impressive for shareholders.
+                </aside>
+            </section>
+
+            <!-- Financial Formulas -->
+            <section>
+                <h2>Valuation Metrics</h2>
+                <p>Our Return on Equity (ROE) calculation:</p>
+                <p>$$ROE = \frac{Net\ Income}{Shareholders'\ Equity} \times 100$$</p>
+                
+                <div class="fragment">
+                    <p>Compound Annual Growth Rate (CAGR) over 3 years:</p>
+                    <p>$$CAGR = \left(\frac{Ending\ Value}{Beginning\ Value}\right)^{\frac{1}{n}} - 1$$</p>
+                </div>
+                
+                <div class="fragment">
+                    <p>Our Q4 Economic Value Added (EVA):</p>
+                    <p>$$EVA = NOPAT - (Capital \times WACC)$$</p>
+                    <p style="text-align: center;"><small>Where WACC = 8.2%, generating positive EVA of $340M</small></p>
+                </div>
+                <aside class="notes">
+                    These formulas demonstrate our financial health metrics.
+                    Our ROE of 18.5% exceeds our cost of capital by over 10 percentage points.
+                    The positive EVA shows we're creating real shareholder value.
+                </aside>
+            </section>
+
+            <!-- Code Sample - Python Analytics -->
+            <section>
+                <h2>Portfolio Risk Analysis</h2>
+                <p>Python code for Value at Risk (VaR) calculation:</p>
+                <pre><code class="python" data-trim data-line-numbers="1-3|5-8|10-14">
+import numpy as np
+import pandas as pd
+from scipy import stats
+
+# Calculate 95% Value at Risk
+def calculate_var(returns, confidence_level=0.95):
+    """Calculate VaR using historical simulation method"""
+    return np.percentile(returns, (1 - confidence_level) * 100)
+
+# Portfolio analysis for Q4 2025
+portfolio_returns = np.array([-0.02, 0.03, 0.01, 0.04, -0.01])
+var_95 = calculate_var(portfolio_returns, 0.95)
+
+print(f"95% VaR: ${var_95 * portfolio_value:,.2f}")
+# Output: 95% VaR: $1,234,567.89
+                </code></pre>
+                <aside class="notes">
+                    This code demonstrates our risk management framework.
+                    We use Python for real-time portfolio analytics.
+                    The VaR calculation helps us understand worst-case scenarios.
+                </aside>
+            </section>
+
+            <!-- Code Sample - SQL Query -->
+            <section>
+                <h2>Data Infrastructure</h2>
+                <p>SQL query for revenue aggregation across divisions:</p>
+                <pre><code class="sql" data-trim data-line-numbers>
+SELECT 
+    division_name,
+    SUM(revenue) as total_revenue,
+    SUM(net_income) as total_profit,
+    ROUND(SUM(net_income) / SUM(revenue) * 100, 2) as profit_margin,
+    COUNT(DISTINCT customer_id) as unique_customers
+FROM 
+    financial_transactions
+WHERE 
+    transaction_date BETWEEN '2025-10-01' AND '2025-12-31'
+    AND status = 'completed'
+GROUP BY 
+    division_name
+HAVING 
+    SUM(revenue) > 1000000
+ORDER BY 
+    total_revenue DESC;
+                </code></pre>
+                <aside class="notes">
+                    Our data warehouse processes over 50M transactions daily.
+                    This query runs in under 2 seconds thanks to our optimized infrastructure.
+                    Real-time analytics enable faster decision-making.
+                </aside>
+            </section>
+
+            <!-- Investment Strategy with Fragments -->
+            <section>
+                <h2>2026 Strategic Investments</h2>
+                <div style="text-align: center;">
+                    <p class="fragment fade-up">💼 <strong>Technology Infrastructure</strong>: $500M</p>
+                    <p class="fragment fade-up">🤖 <strong>AI & Machine Learning</strong>: $300M</p>
+                    <p class="fragment fade-up">🌐 <strong>Market Expansion</strong>: $400M</p>
+                    <p class="fragment fade-up">👥 <strong>Talent Acquisition</strong>: $200M</p>
+                    <p class="fragment fade-up">🔒 <strong>Cybersecurity</strong>: $150M</p>
+                </div>
+                <p class="fragment" style="text-align: center; margin-top: 40px;">
+                    <strong>Total Investment: $1.55B</strong>
+                </p>
+                <aside class="notes">
+                    These investments position us for sustained growth.
+                    Technology and AI are our top priorities - they drive efficiency and innovation.
+                    Market expansion focuses on emerging markets in Asia and Latin America.
+                    Cybersecurity investment is non-negotiable in today's threat landscape.
+                </aside>
+            </section>
+
+            <!-- Risk Assessment -->
+            <section>
+                <h2>Risk Profile & Mitigation</h2>
+                <div style="font-size: 0.8em;">
+                    <h3 class="fragment">Market Risks</h3>
+                    <ul style="margin-bottom: 30px;">
+                        <li class="fragment">Interest rate volatility: Hedged via derivatives ($2.1B notional)</li>
+                        <li class="fragment">Currency exposure: Natural hedges + forward contracts</li>
+                    </ul>
+                    
+                    <h3 class="fragment">Operational Risks</h3>
+                    <ul style="margin-bottom: 30px;">
+                        <li class="fragment">Cyber threats: Multi-layer security + $50M insurance</li>
+                        <li class="fragment">Regulatory compliance: Dedicated team of 150+ professionals</li>
+                    </ul>
+                    
+                    <p class="fragment" style="text-align: center;">
+                        <em>Risk-adjusted return (Sharpe Ratio): <strong>1.85</strong></em>
+                    </p>
+                </div>
+                <aside class="notes">
+                    Our risk management is best-in-class.
+                    The Sharpe ratio of 1.85 indicates excellent risk-adjusted returns.
+                    We've invested heavily in cybersecurity following industry incidents.
+                    Regulatory compliance is proactive, not reactive.
+                </aside>
+            </section>
+
+            <!-- Financial Forecasting Formula -->
+            <section>
+                <h2>2026 Revenue Projection Model</h2>
+                <p>Black-Scholes option pricing for growth scenarios:</p>
+                <p>$$C = S_0 N(d_1) - Xe^{-rT}N(d_2)$$</p>
+                <p style="font-size: 0.7em;">Where:</p>
+                <p style="font-size: 0.6em;">
+                    $$d_1 = \frac{\ln(S_0/X) + (r + \sigma^2/2)T}{\sigma\sqrt{T}}$$
+                    $$d_2 = d_1 - \sigma\sqrt{T}$$
+                </p>
+                <div class="fragment">
+                    <p style="text-align: center; margin-top: 30px;">
+                        <strong>Projected 2026 Revenue Range:</strong><br>
+                        Base Case: $42.5B | Bull Case: $48.2B | Bear Case: $38.1B
+                    </p>
+                </div>
+                <aside class="notes">
+                    We use sophisticated financial models for projections.
+                    The Black-Scholes framework helps us value growth optionality.
+                    Our base case assumes continued market share gains and 15% organic growth.
+                </aside>
+            </section>
+
+            <!-- Closing Slide -->
+            <section data-background-gradient="linear-gradient(to bottom, #064e3b, #059669)">
+                <h2 style="color: white;">Looking Ahead</h2>
+                <div style="color: white; font-size: 0.9em;">
+                    <p class="fragment">✅ Strong Q4 performance positions us well for 2026</p>
+                    <p class="fragment">✅ Strategic investments in technology and talent</p>
+                    <p class="fragment">✅ Robust risk management framework</p>
+                    <p class="fragment">✅ Commitment to sustainable growth and shareholder value</p>
+                    <br>
+                    <p class="fragment" style="text-align: center; font-size: 1.3em; margin-top: 40px;">
+                        <strong>Questions?</strong>
+                    </p>
+                </div>
+                <aside class="notes">
+                    Conclude with confidence. We've delivered strong results and have a clear path forward.
+                    Open the floor for questions. Be prepared to discuss:
+                    - Margin sustainability
+                    - Capital allocation priorities
+                    - Competitive positioning
+                    - Regulatory environment
+                    Thank everyone for their time and confidence in our strategy.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Email footer -->
+    <div class="email-footer">23f3004131@ds.study.iitm.ac.in</div>
+
+    <!-- RevealJS and Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/math/math.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            center: true,
+            slideNumber: 'c/t',
+            showSlideNumber: 'all',
+            controls: true,
+            progress: true,
+            history: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        });
+    </script>
+</body>
+</html>
